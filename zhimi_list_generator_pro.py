@@ -1,5 +1,5 @@
-# 使用方法: python zhimi_list_generator.py text.txt list.txt [exclude.txt (可选)]
-# 其中text.txt是待抽取单词本的文本，list.txt是生成单词本，[exclude.txt是要排除掉的文本(可选)]
+# 使用方法: python zhimi_list_generator.py text.txt list.txt
+# 其中text.txt是待抽取单词本的文本，list.txt是生成单词本
 import sys
 import re
 from nltk.stem.wordnet import WordNetLemmatizer
