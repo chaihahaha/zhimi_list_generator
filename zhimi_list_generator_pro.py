@@ -8,7 +8,7 @@ from nltk import RegexpTokenizer
 toknizer = RegexpTokenizer(r'''\w'|\w+|[^\w\s]''')
 def get_unique_words(path,exclude, coding):
     f = open(path,encoding=coding)
-    text = f.read()
+    text = f.read().lower()
     f.close()
     words = toknizer.tokenize(text)
     words = [WordNetLemmatizer().lemmatize(WordNetLemmatizer().lemmatize(word,'v'),'n') for word in words]
